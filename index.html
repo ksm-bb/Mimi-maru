@@ -9,8 +9,8 @@
   <link rel="icon" sizes="192x192" href="https://i.ibb.co/1jySC5R/Untitled-1.png">
   <link rel="shortcut icon" href="https://i.ibb.co/1jySC5R/Untitled-1.png">
   
-  <meta name="apple-mobile-web-app-title" content="BABYBLUE Q">
-  <meta name="application-name" content="BABYBLUE Q">
+  <meta name="apple-mobile-web-app-title" content="Mimi maru">
+  <meta name="application-name" content="Mimi maru">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
   
@@ -109,7 +109,7 @@
           <div className="flex flex-col justify-center ml-2 relative z-10">
             <div className="flex items-center gap-1">
               <h1 className="text-2xl font-black italic tracking-tighter flex">
-                {"BABYBLUE".split('').map((char, index) => (
+                {"Mimi maru".split('').map((char, index) => (
                   <span key={index} className="bg-gradient-to-br from-[#99C3E4] to-[#C1E4F3] bg-clip-text text-transparent drop-shadow-sm inline-block animate-text-wave" style={{ animationDelay: `${index * 0.1}s` }}>{char}</span>
                 ))}
               </h1>
@@ -370,7 +370,7 @@
       // ==========================================
       // 🌟 ตั้งค่าเชื่อมต่อ API (GitHub -> Google Sheets)
       // ==========================================
-      const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbx-v0-PR40LhiBy5SSyBf3IUe6Bf1zER_hvhjJi8HL2DTcoMEj3xwlBTmflPR6bQXZekA/exec";
+      const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzL5YbdLL4ZCOqx7clcBSqkhlh7uVN6n2CXO1vGU03wfFzzfwurHtf28ObF5gTSVkb-/exec";
 
       const fetchAPI = async (payload) => {
         try {
@@ -387,7 +387,7 @@
       };
 
       useEffect(() => {
-        document.title = "BABYBLUE CHECK Q"; 
+        document.title = "Mimi maru"; 
         
         fetch(WEB_APP_URL + "?action=getInitialData", { redirect: "follow" })
           .then(res => res.json())
@@ -855,6 +855,7 @@
 </body>
 
 </html>
+
 
 
 
